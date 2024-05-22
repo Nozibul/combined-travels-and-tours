@@ -1,10 +1,10 @@
-import React from "react";
+import HomePage from "./home/page";
 
-const HomePage = () => {
+const Home = () => {
      return (
           <div>
-               <h1 className="text-3xl font-bold underline">Hello world!</h1>
+           <HomePage />
           </div>
      );
 };
-export default HomePage;
+export default Home;
