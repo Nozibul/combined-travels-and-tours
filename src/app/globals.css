@@ -8,7 +8,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
+  --header-height: 2.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -22,7 +22,7 @@
 
   /*========== z index ==========*/
   --z-tooltip: 10;
-  --z-fixed: 100;
+  --z-fixed: 200;
 }
 
 /*========== Responsive typography ==========*/

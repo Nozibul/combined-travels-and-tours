@@ -3,10 +3,14 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--black-color);
+    background-color: transparent;
     z-index: var(--z-fixed);
+    transition: background-color 1s ease;
   }
-  
+  .headerScrolled {
+    background-color: black;
+  }
+
   .nav {
     position: relative;
     height: var(--header-height);
@@ -109,7 +113,7 @@
     bottom: -6px;
     width: 0;
     height: 2px;
-    background-color: var(--white-color);
+    background-color: #f1683a;
     transition: width .4s ease-out;
   }
   

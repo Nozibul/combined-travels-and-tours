@@ -1,10 +1,51 @@
-// import Link from 'next/link'
+import Banner from "./banner/Banner";
+
 const HomePage = () => {
      return (
-          <div>
-               <h1 className="text-3xl font-bold underline">Home Page</h1>
-               {/* <Link href="/tours">Tours page</Link> */}
-          </div>
+          <>
+               <Banner />
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+               <h1 className="text-3xl font-bold">Home Page</h1>
+          </>
      );
 };
 export default HomePage;

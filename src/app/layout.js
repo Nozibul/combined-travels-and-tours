@@ -17,9 +17,8 @@ export default function RootLayout({ children }) {
      return (
           <html lang="en">
                <body className={inter.variable}>
-                    {/* <NextTopLoader color="rgb(5 150 105)" height={2} speed={200} /> */}
                     <Navbar />
-                    <main className="p-2">{children}</main>
+                    <main className="">{children}</main>
                </body>
           </html>
      );
