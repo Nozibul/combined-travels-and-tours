@@ -7,6 +7,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
+
+
+/* styles/globals.css */
+@font-face {
+  font-family: 'Reey-regular';
+  src: url('/fonts/Reey-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --header-height: 2.5rem;
 
@@ -23,6 +33,23 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 200;
+}
+
+/* styles/globals.css */
+@font-face {
+  font-family: 'Reey-Regular';
+  src: url('https://static1.squarespace.com/static/5c364fe0cc8feda148eb5ce4/t/61686a3101db57695436dde4/1634232882067/Reey-Regular.otf') format('opentype'),
+       url('https://static1.squarespace.com/static/5c364fe0cc8feda148eb5ce4/t/6168707da89e9254156cb854/1634234493849/Reey-Regular.woff') format('woff'),
+       url('https://static1.squarespace.com/static/5c364fe0cc8feda148eb5ce4/t/61687086bbcf2c04c957eb55/1634234502377/Reey-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  
+/* styles/globals.css */
+.reey-text {
+  font-family: 'Reey-Regular';
+  color: #f1683a;
 }
 
 /*========== Responsive typography ==========*/

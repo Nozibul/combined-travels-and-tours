@@ -1,0 +1,91 @@
+
+ /* button style */
+ .buttons {
+    width: 205px; 
+    height: 80px;
+    margin: 15px;
+    perspective: 1800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ 
+ .qube {
+    position: relative;
+    height: 60px; 
+    width: 185px; 
+    perspective: 1800px;
+ }
+ 
+ .qube .front, .qube .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateX(-90deg);
+    transition: transform 0.3s ease;
+    color: #FFF; 
+    line-height: 60px; 
+    text-align: center;
+ }
+ 
+ .qube .front {
+    background-color: #0d6a70; 
+ }
+ 
+ .qube .front::before {
+    position: absolute;
+    content: '';
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+ }
+ 
+ .qube .front::after {
+    position: absolute;
+    content: '';
+    height: 155px;
+    width: 50px; 
+    background: #FFF; 
+    opacity: .4;
+    left: -75px;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+ }
+ 
+ .qube .back {
+    background-color: #ddda2c;
+    color: #032929; 
+    transform: rotateX(0deg) translateZ(60px); 
+ }
+ 
+ .qube:hover .front {
+    transform: rotateX(0deg) translateZ(30px); 
+ }
+ 
+ .qube:hover .back {
+    transform: rotateX(90deg) translateZ(30px); 
+ }
+ 
+ .buttons:active .front {
+    border-radius: 0;
+    background-color: transparent;
+    color: #191919; 
+ }
+ 
+ .buttons:active .front::before {
+    background-color: #d6d45dc9; 
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+ 
+ .buttons:active .front::after {
+    left: 120%;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+ 

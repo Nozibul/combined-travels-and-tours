@@ -2,6 +2,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Banner.module.css";
+import classNames from 'classnames';
+// import img1 from "../../../../public/assets/images/backgrounds/popular-tours__img-1.jpg"
 import img1 from "../../../../public/assets/images/bannerSlide/img1.jpg"
 import img2 from "../../../../public/assets/images/bannerSlide/img2.jpg"
 import img3 from "../../../../public/assets/images/bannerSlide/img3.jpg"
@@ -14,7 +16,7 @@ const Banner = () => {
                img: img1,
                author: "Combined Tours & Travels",
                title: "DESIGN SLIDER",
-               topic: "ANIMAL",
+               topic: "Tours",
           },
           {
                img: img2,
@@ -44,7 +46,7 @@ const Banner = () => {
      const timeDom = useRef(null);
 
      useEffect(() => {
-          const timeRunning = 2000;
+          const timeRunning = 3000;
           const timeAutoNext = 8000;
 
           const handleNext = () => {
@@ -111,24 +113,23 @@ const Banner = () => {
                     {items.map((item, index) => (
                          <div
                               key={index}
-                              className={`${styles.item} ${
-                                   index === currentIndex ? styles.active : ""
-                              }`}
+                              className={`${styles.item} ${index === currentIndex ? styles.active : ""
+                                   }`}
                          >
                               <Image src={item.img} alt={item.title} priority />
                               <div className={styles.content}>
-                                   <div className={styles.author}>
-                                        {item.author}
+                                   <div className={classNames(styles.author, 'reey-text')}>
+                                       {item.author}
                                    </div>
-                                   <div className={styles.title}>
+                                   <div className={`${styles.topic} mt-10`}>
                                         {item.title}
                                    </div>
-                                   <div className={styles.topic}>
+                                   <div className={`${styles.topic} mt-4`}>
                                         {item.topic}
                                    </div>
                                    <div className={styles.buttons}>
-                                        <button>SEE MORE</button>
-                                        <button>SUBSCRIBE</button>
+                                        <BannerBt />
+
                                    </div>
                               </div>
                          </div>
@@ -137,7 +138,7 @@ const Banner = () => {
                <div className={styles.thumbnail} ref={thumbnailBorderDom}>
                     {items.map((item, index) => (
                          <div key={index} className={styles.item}>
-                              <img src={item.img} alt={item.title} />
+                              <Image src={item.img} alt={item.title} />
                               <div className={styles.content}>
                                    <div className={styles.title}>
                                         Name Slider
