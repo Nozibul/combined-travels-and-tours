@@ -11,6 +11,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "delay": "^6.0.0",
+    "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "nextjs-toploader": "^1.6.12",
     "react": "^18",

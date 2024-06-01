@@ -3,7 +3,7 @@
  .buttons {
     width: 205px; 
     height: 80px;
-    margin: 15px;
+    /* margin: 15px; */
     perspective: 1800px;
     overflow: hidden;
     display: flex;

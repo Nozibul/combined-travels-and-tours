@@ -8,6 +8,7 @@ import img1 from "../../../../public/assets/images/bannerSlide/img1.jpg"
 import img2 from "../../../../public/assets/images/bannerSlide/img2.jpg"
 import img3 from "../../../../public/assets/images/bannerSlide/img3.jpg"
 import img4 from "../../../../public/assets/images/bannerSlide/img4.jpg"
+import BannerBtn from "../components/buttons/bannerBtn/BannerBtn";
 
 const Banner = () => {
      const [currentIndex, setCurrentIndex] = useState(0);
@@ -110,7 +111,7 @@ const Banner = () => {
      return (
           <div className={styles.carousel} ref={carouselDom}>
                <div className={styles.list} ref={sliderDom}>
-                    {items.map((item, index) => (
+                    {items?.map((item, index) => (
                          <div
                               key={index}
                               className={`${styles.item} ${index === currentIndex ? styles.active : ""
@@ -119,7 +120,7 @@ const Banner = () => {
                               <Image src={item.img} alt={item.title} priority />
                               <div className={styles.content}>
                                    <div className={classNames(styles.author, 'reey-text')}>
-                                       {item.author}
+                                        {item.author}
                                    </div>
                                    <div className={`${styles.topic} mt-10`}>
                                         {item.title}
@@ -127,9 +128,8 @@ const Banner = () => {
                                    <div className={`${styles.topic} mt-4`}>
                                         {item.topic}
                                    </div>
-                                   <div className={styles.buttons}>
-                                        <BannerBt />
-
+                                   <div>
+                                        <BannerBtn />
                                    </div>
                               </div>
                          </div>
