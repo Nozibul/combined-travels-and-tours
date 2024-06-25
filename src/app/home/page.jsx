@@ -1,5 +1,5 @@
 import Banner from "./banner/Banner";
-import Gallery from "./gallery/Gallery";
+import HomeGallery from "./homeGallery/HomeGallery";
 import WorkSection from "./workSection/WorkSection";
 
 const HomePage = () => {
@@ -7,7 +7,7 @@ const HomePage = () => {
           <>
                <Banner />
                <WorkSection />
-               <Gallery />
+               <HomeGallery />
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>

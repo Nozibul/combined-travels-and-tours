@@ -50,9 +50,9 @@
 
 .carousel .list .item .title,
 .carousel .list .item .topic {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 
 /* .carousel .list .item .topic {
