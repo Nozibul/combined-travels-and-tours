@@ -6,10 +6,8 @@ const HomePage = () => {
      return (
           <>
                <Banner />
-               <WorkSection />
                <HomeGallery />
-               <h1 className="text-3xl font-bold">Home Page</h1>
-               <h1 className="text-3xl font-bold">Home Page</h1>
+               <WorkSection />
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>

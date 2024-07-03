@@ -1,37 +1,20 @@
-.galleryOne {
-    position: relative;
+
+.lgReactElement {
+    column-count: 3;
+    column-gap: 10px;
+    max-width: 1200px; /* Add max-width here */
+    margin: 0 auto; /* Center align the gallery */
+}
+
+.gallery__item {
+    max-width: 100%;
     display: block;
-    padding: 380px 0 90px;
-    background-color: #faf5ee;
-    margin-top: -270px;
-  }
-  
-  .galleryOneBg {
-    position: absolute;
-    top: 128px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 560px;
-    width: 1157px;
-    opacity: 0.6;
-  }
-  
-  .galleryOneContainerBox {
-    position: relative;
-    display: block;
-    max-width: 1620px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-  
-  .galleryOneContent {
-    position: relative;
-    display: block;
-    margin-right: -5px;
-    margin-left: -5px;
-  }
-  
+    padding: 5px 0px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.gallery__item:hover {
+    filter: opacity(.9);
+    transform: scale(1.01);
+}

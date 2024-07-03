@@ -20,12 +20,12 @@ const WorkSection = () => {
 
     return (
         <>
-            <div className="w-full mt-8 mb-12">
+            <div className="max-w-[1250px] p-16 mx-auto mt-8 mb-12 shadow-custom rounded-lg">
                 <TextTitle textTitle="How it Works" />
                 <TextHeader
-                    textHeader="Create CV/Resume Following 3 Simple Steps" tSize="text-xl"
+                    textHeader="Create CV/Resume Following 3 Simple Steps" tSize="text-3xl"
                 />
-                <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4  justify-items-center w-full mt-12">
+                <div className="grid w-full gap-4 mt-12 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 justify-items-center">
                     {works?.length > 0 ? (
                         works?.map((work) => {
                             const { id, title, header, img } = work;
@@ -34,14 +34,14 @@ const WorkSection = () => {
                                 <Motion className="grid justify-items-center" key={id}
                                     {...motionProps}
                                 >
-                                    <div className="outline-violet-600 work-container flex justify-center items-center relative">
-                                        <div className="child-circle flex justify-center items-center">
+                                    <div className="relative flex items-center justify-center outline-violet-600 work-container">
+                                        <div className="flex items-center justify-center child-circle">
                                             <Image
                                                 alt="document-image"
                                                 src={img}
                                             />
                                         </div>
-                                        <div className="mini-circle flex justify-center items-center">
+                                        <div className="flex items-center justify-center mini-circle">
                                             0{id}
                                         </div>
                                     </div>
