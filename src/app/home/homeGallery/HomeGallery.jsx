@@ -29,8 +29,6 @@ import img6 from "../../../../public/assets/images/gallery/10.jpg";
 import img7 from "../../../../public/assets/images/gallery/11.jpg";
 import img8 from "../../../../public/assets/images/gallery/12.jpg";
 import img9 from "../../../../public/assets/images/gallery/13.jpg";
-import img10 from "../../../../public/assets/images/gallery/14.jpg";
-import img11 from "../../../../public/assets/images/gallery/15.jpg";
 
 import { TextTitle } from "@/components/text/textTitle/TextTitle";
 import { TextHeader } from "@/components/text/textHeader/TextHeader";
@@ -46,8 +44,6 @@ const galleryImages = [
   { src: img7, alt: "Gallery Image 7" },
   { src: img8, alt: "Gallery Image 8" },
   { src: img9, alt: "Gallery Image 9" },
-  //   { src: img10, alt: "Gallery Image 10" },
-  //   { src: img11, alt: "Gallery Image 11" },
 ];
 
 const HomeGallery = () => {
