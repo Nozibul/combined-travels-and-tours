@@ -1,11 +1,7 @@
-import shape1 from "../public/assets/images/discount/about-one-shape-1.png";
-import shape2 from "../public/assets/images/discount/about-one-shape-2.png";
 import about from "../public/assets/images/discount/about-one-img.png";
 
 const discounts = {
   about,
-  shape1,
-  shape2,
   phone: "666-888-0000",
   discount: "30%",
   tagline: "Get to know us",

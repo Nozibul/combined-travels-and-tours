@@ -1,4 +1,5 @@
 import Banner from "./banner/Banner";
+import BannerCards from "./bannerCard/BannerCard";
 import Discount from "./discount/Discount";
 import Gallery from "./gallery/Gallery";
 import HomeGallery from "./homeGallery/HomeGallery";
@@ -12,6 +13,7 @@ const HomePage = () => {
                {/* <HomeGallery /> */}
                <WorkSection />
                <Discount />
+               <BannerCards />
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>
                <h1 className="text-3xl font-bold">Home Page</h1>

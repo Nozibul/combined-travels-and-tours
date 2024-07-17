@@ -55,32 +55,6 @@
   line-height: 1.5em;
 }
 
-/* .carousel .list .item .topic {
-  color: #f1683a;
-} */
-
-/* .carousel .list .item .buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 130px);
-  grid-template-rows: 40px;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.carousel .list .item .buttons button {
-  border: none;
-  background-color: #eee;
-  letter-spacing: 3px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-} */
-
-/* .carousel .list .item .buttons button:nth-child(2) {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #eee;
-} */
-
 /* thumbnail */
 .thumbnail {
   position: absolute;
