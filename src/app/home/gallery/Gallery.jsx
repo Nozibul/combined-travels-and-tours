@@ -9,7 +9,7 @@ const HomeGallery = () => {
         <TextHeader textHeader="Go Exotic Places" tSize="text-3xl" />
 
         {/* <h2>Sadie</h2> */}
-        <div className="grid grid-cols-3 p-8">
+        <div className="grid p-8 mx-auto xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
           <figure className="effect-sadie">
             <img
               src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg"

@@ -8,7 +8,7 @@ export const TextHeader = ({ textHeader, headerPosition, tSize }) => {
       <article className={`${headerPositions} mt-6 mb-12`}>
         <span
           style={{ whiteSpace: 'pre-line' }}
-          className={` ${headerSize.join(" ")} font-bold font-serif text-gray-600`}
+          className={` ${headerSize.join(" ")} font-bold font-serif text-[#313041]`}
         >
           {textHeader}
         </span>

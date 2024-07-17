@@ -5,13 +5,13 @@
 	float: left;
 	overflow: hidden;
 	min-width: 310px;
-	max-width: 420px;
+	max-width: 410px;
 	max-height: 360px;
 	/* width: 48%; */
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
-	margin:4px auto;
+	margin: 8px auto;
 	border-radius: 10px;
 }
 
