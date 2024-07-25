@@ -31,7 +31,7 @@ const Discount = () => {
           <marquee>Plan your Trip with Combined Tours and Travels</marquee>
         </div>
         <div className="z-auto -mt-10">
-          <p className="z-10 text-lg font-medium text-gray-400">
+          <p className="z-10 text-lg font-medium text-gray-300">
             There are many variations of passages of available but the majority
             have suffered alteration in some form, by injected hum randomised
             words which don&apos;t look even slightly.
