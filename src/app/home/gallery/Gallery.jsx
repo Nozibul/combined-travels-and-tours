@@ -4,7 +4,7 @@ import { TextHeader } from "@/components/text/textHeader/TextHeader";
 const HomeGallery = () => {
   return (
     <>
-      <div className="mx-auto mt-20 mb-20 ">
+      <div className="mx-auto mt-20 ">
         <TextTitle textTitle="Destination lists" />
         <TextHeader textHeader="Go Exotic Places" tSize="text-3xl" />
 

@@ -38,7 +38,7 @@ const Discount = () => {
           </p>
         </div>
         <div>
-          <ol className="mt-8 olcards">
+          <ol className="mt-14 olcards">
             <li style={{ "--cardColor": "#36aeb3" }}>
               <div className="content">
                 <div className="icon">🧳</div>

@@ -19,9 +19,9 @@ marquee {
   font-weight: 500;
   display: flex;
   align-items: center;
-  color: #313041;
+  color: #48475b;
   letter-spacing: 3px;
-  box-shadow: 0 1px 4px rgba(197, 195, 195, 0.667);
+  /* box-shadow: 0 1px 4px rgba(197, 195, 195, 0.667); */
   border-radius: 5px;
   transform: rotateX(55deg) rotateZ(60deg);
 }
@@ -63,7 +63,7 @@ marquee {
   .olcards .content {
     background-color: var(--cardColor);
     display: grid;
-    padding: 0.5em 2.5em 0.5em 1em;
+    padding: 0.2em 2.5em 0.5em 1em;
     grid-template-areas:
       "icon title"
       "icon text";
@@ -115,6 +115,7 @@ marquee {
   
   .olcards .text {
     grid-area: text;
+    color: rgb(227, 219, 219);
   }
 
   
