@@ -1,0 +1,104 @@
+
+  
+  .body {
+    background: rgba(15, 3, 34, 0.987);
+    scroll-behavior: smooth;
+    margin-top: 100px;
+  }  
+  
+  .parallax {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1477353822394-80a4b0a3c493?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=ff04213f3d2f0c54aaa47a34bb91df30");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+  
+ .title {
+    color: white;
+    font-size: 8em;
+  }
+  
+ .title span {
+    background: linear-gradient(rgba(0, 0, 0, 0) 65%, rgba(255, 255, 255, 0.3) 35%)
+  } 
+  
+  .screen {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, black 95%);
+  }
+  
+  .flex {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    height: 300px;
+    margin: 10px 0;
+    width: 30%;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .double {
+    width: 65%;
+    background-image: url("https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .double-2 {
+    background-image: url("https://images.unsplash.com/photo-1437422061949-f6efbde0a471?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=3743c450231eda3df43a243f1cca2fc0");
+  }
+  
+  .more {
+    text-align: justify;
+  }
+  
+  #more {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .second-screen {
+    background: rgba(0, 0, 0, 0.77);
+  }
+  
+  .second-screen p {
+    color: white;
+    width: 80%;
+    margin: 7% auto;
+    font-size: 20px;
+    line-height: 170%;
+  }
+  
+  .link {
+    color: #27D;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  
+  .screen a {
+    font-size: 16px;
+  }
