@@ -19,6 +19,6 @@ export const works = [
     id: 3,
     img: downloadImg,
     title: "Download",
-    header: "It’s Completely Free. Simply Login And Download Your Desired Templates",
+    header: "Simply Login and Download Your Desired Templates",
   },
 ];

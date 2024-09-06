@@ -4,9 +4,13 @@ import "./discount.css";
 import Buttons from "@/components/buttons/Buttons";
 import Image from "next/image";
 import classNames from "classnames";
+import TextScrollEffect from "@/components/text/textScrollEffect/TextScrollEffect";
 
 const { about, phone, discount, tagline, title, destination, points } =
   discounts;
+
+const othersDesc = 
+`There are many variations of passages of available but the majority have suffered alteration in some form by injected hum randomisedwords which don&apos;t look even slightly.`;
 
 const Discount = () => {
   return (
@@ -31,12 +35,14 @@ const Discount = () => {
           <marquee>Plan your Trip with Combined Tours and Travels</marquee>
         </div>
         <div className="z-auto -mt-10">
-          <p className="z-10 text-lg font-medium text-gray-300">
-            There are many variations of passages of available but the majority
-            have suffered alteration in some form, by injected hum randomised
-            words which don&apos;t look even slightly.
-          </p>
-        </div>
+          <span className="z-10 text-lg font-normal text-gray-400">
+            <TextScrollEffect
+              paragraph={othersDesc}
+              fontSize="20px"
+              color="#9ca3af"
+            />
+          </span>
+        </div> 
         <div>
           <ol className="mt-14 olcards">
             <li style={{ "--cardColor": "#36aeb3" }}>

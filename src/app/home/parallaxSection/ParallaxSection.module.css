@@ -1,4 +1,4 @@
-/* Blog.module.css */
+
 .body {
     overflow-x: hidden;
   }
@@ -23,15 +23,15 @@
   
   .lineSeparator {
     display: block;
-    width: 50%;
-    height: 1px;
+    width: 70%;
+    height: 2px;
     text-align: center;
     margin: 20px auto;
     border-bottom: 1px solid grey;
   }
   
   .firstWrap {
-    height: 100%;
+    height: 600px;
     width: 100vw;
     background: #ffffff url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?fit=crop&fm=jpg&h=950&q=80&w=1920") no-repeat fixed;
     background-size: cover;
@@ -59,11 +59,12 @@
     height: 100vh;
     width: 100vw;
     background-color: transparent;
+    padding-top: 35px;
   }
   
   .firstInnerDiv {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

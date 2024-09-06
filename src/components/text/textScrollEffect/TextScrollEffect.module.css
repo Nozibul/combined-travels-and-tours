@@ -1,0 +1,16 @@
+.paragraph {
+  display: flex;
+  line-height: 1;
+  flex-wrap: wrap;
+}
+
+.paragraph .word {
+  position: relative;
+  margin: 0 4px; /* Adjusted margin to center text properly */
+}
+
+.paragraph .word .shadow {
+  position: absolute;
+  opacity: 20%;
+}
+
