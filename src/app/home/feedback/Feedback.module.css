@@ -4,7 +4,6 @@
   margin: auto;
   padding: 20px;
   background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -19,8 +18,8 @@
 .feedbackForm {
   position: relative;
   width: 30%;
-  border: #22c55e solid 1px;
-  height: calc(100% - 60px); /* Adjusted to fit the container */
+  border: #d0ab6d solid 1px;
+  height: calc(100% - 60px);
 }
 
 .feedbackInput {
@@ -29,12 +28,18 @@
 
 .profileImage {
   z-index: 2;
-  transition: transform 0.5s ease-in-out;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  border: #d0ab6d solid 3px;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  animation: pulse 4s ease-in-out infinite;
 }
 
-.profileImage:hover {
-  transform: scale(1.3);
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .dot {
@@ -46,10 +51,18 @@
   transform: scale(1.5);
 }
 
-.purpleDot {
-  background-color: #a855f7;
+.yellowDot {
+  background-color: #d0ab6d;
 }
 
 .greenDot {
   background-color: #22c55e;
+}
+
+.rating {
+  transition: all 0.4s ease-in-out;
+}
+
+.profileImage:hover .rating {
+  transform: translate(-50%, -10px) scale(1.1);
 }

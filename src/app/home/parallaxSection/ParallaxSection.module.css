@@ -20,7 +20,11 @@
       font-size: 30px !important;
     }
   }
-  
+
+  .bodyText .lineSeparator span {
+    margin-top: -5rem;
+  }
+
   .lineSeparator {
     display: block;
     width: 70%;
@@ -37,22 +41,20 @@
     background-size: cover;
     background-position: 50% 50%;
   }
-  
-  .secondWrap,
-  .thirdWrap {
-    height: 100%;
+ 
+  .secondWrap{
+    height:55vw;
     width: 100vw;
     background-size: cover;
     background-position: 50% 50%;
   }
+
   
   .secondWrap {
     background: #ffffff url("https://images.unsplash.com/photo-1444090542259-0af8fa96557e?fit=crop&fm=jpg&h=950&q=80&w=1920") no-repeat fixed;
   }
   
-  .thirdWrap {
-    background: #ffffff url("https://images.unsplash.com/photo-1443827423664-eac70d49dd0d?fit=crop&fm=jpg&h=950&q=80&w=1920") no-repeat fixed;
-  }
+
   
   .firstDiv {
     position: relative;
@@ -84,6 +86,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   
+ 
   .secondDiv,
   .thirdDiv,
   .fourthDiv,
@@ -111,35 +114,4 @@
     color: #fff;
   }
   
-  #backToTop {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-    background-color: rgb(255, 255, 255);
-    color: #000;
-    cursor: pointer;
-    border: 0;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: opacity 0.2s ease-out;
-    opacity: 0;
-  }
-  
-  #backToTop:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
-  }
-  
-  #backToTop.show {
-    opacity: 1;
-  }
-  
-  .newUpdate {
-    padding: 20px;
-    text-align: center;
-  }
+

@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import styles from "./ParallaxSection.module.css";
 import { TextTitle } from "@/components/text/textTitle/TextTitle";
+import Video from "../components/video/Video";
 
 const ParallaxSection = () => {
   useEffect(() => {
@@ -22,75 +23,44 @@ const ParallaxSection = () => {
       }
     };
 
-    // Back to top button visibility on scroll
-    const handleScroll = () => {
-      const backToTopButton = document.getElementById("backToTop");
-      if (window.scrollY > 100) {
-        backToTopButton.classList.add(styles.show);
-      } else {
-        backToTopButton.classList.remove(styles.show);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    document.addEventListener("click", handleClick);
-
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleClick);
     };
   }, []);
 
   return (
-    <div className={styles.body}>
-      <div className={styles.firstWrap}>
-        <div className={styles.firstDiv}>
-          <TextTitle 
-            textTitle="Are you ready to travel?"
-          />
-          <div className={styles.firstInnerDiv}>
-            <p>Start Scrolling</p>
-            <a href="#anchor">
-              <span
-                className={`glyphicon glyphicon-circle-arrow-down ${styles.downArrow}`}
-              >
-                ↓
-              </span>
-            </a>
+    <>
+      <div className={`grid grid-cols-1 ${styles.body}`}>
+        <div className={styles.firstWrap}>
+          <div className={styles.firstDiv}>
+            <TextTitle textTitle="Are you ready to travel?" />
+            <div className={styles.firstInnerDiv}>
+              <p>Start Scrolling</p>
+              <a href="#anchor">
+                <span
+                  className={`glyphicon glyphicon-circle-arrow-down ${styles.downArrow}`}
+                >
+                  ↓
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.secondWrap}>
+          <div className={styles.secondDiv} id="anchor">
+            <p className={styles.bodyText}>
+              <span className={styles.lineSeparator}></span> Combined Tours &
+              Travels is a Online Tour Booking Platform
+              <span className={styles.lineSeparator}></span>
+            </p>
+          </div>
+          <div>
+            <Video />
           </div>
         </div>
       </div>
-
-      <div className={styles.secondWrap}>
-        <div className={styles.secondDiv} id="anchor">
-          <p className={styles.bodyText}>
-            <span className={styles.lineSeparator}></span> Combined Tours & Travels is a Online Tour Booking Platform
-            <span className={styles.lineSeparator}></span>
-          </p>
-        </div>
-        <div className={styles.thirdDiv}></div>
-      </div>
-
-      <div className={styles.thirdWrap}>
-        <div className={styles.fourthDiv}>
-          <p className={styles.bodyText}>
-            <span className={styles.lineSeparator}></span> Sample parallax with
-            different background images
-            <span className={styles.lineSeparator}></span>
-          </p>
-        </div>
-        <div className={styles.fifthDiv}></div>
-      </div>
-
-      <a
-        href="#"
-        id="backToTop"
-        className={styles.backToTop}
-        title="Back to top"
-      >
-        &uarr;
-      </a>
-    </div>
+    </>
   );
 };
 

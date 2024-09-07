@@ -27,6 +27,7 @@ const HomePage = () => {
       <ParallaxSection />
       <ReviewSection />
       <Feedback />
+     
       {/* <Guide /> */}
       <h1 className="text-3xl font-bold mt-14 ">Home Page</h1>
     </>
