@@ -1,8 +1,9 @@
 "use client";
 import React, { Fragment, useState } from "react";
-import "./video.css";
 import { FaPlayCircle } from "react-icons/fa";
 import video from "../../../../../local-json/videoData"; // import video data with icons
+import Modal from "@/components/modal/Modal";
+import "./video.css";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
@@ -15,16 +16,17 @@ const Video = () => {
           <div className="flex flex-col items-start">
             <div className="relative mb-8">
               <div className="cursor-pointer" onClick={() => setOpen(true)}>
-                <div className="relative flex items-center justify-center w-24 h-24 bg-blue-500 rounded-full">
-                  <FaPlayCircle className="text-4xl text-white" />
-                  <div className="absolute inset-0 bg-blue-400 rounded-full opacity-75 animate-ping"></div>
-                </div>
+                <Modal>
+                  <div className="relative flex items-center justify-center w-24 h-24 m-8 bg-gray-700 rounded-full">
+                    <FaPlayCircle className="text-4xl text-white" />
+                    <div className="absolute inset-0 bg-gray-600 rounded-full opacity-75 animate-ping"></div>
+                  </div>
+                </Modal>
               </div>
             </div>
-            <p className="mb-4 text-2xl text-blue-500 font-cursive">
-              {tagline}
-            </p>
-            <h2 className="mb-6 text-4xl font-bold leading-tight text-gray-800">
+
+            <p className="m-8 text-2xl text-gray-800 font-cursive">{tagline}</p>
+            <h2 className="m-8 text-4xl font-bold leading-tight text-gray-800">
               {title}
             </h2>
           </div>
