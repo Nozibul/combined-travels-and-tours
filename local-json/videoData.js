@@ -4,7 +4,7 @@ import { GiParachute, GiHangGlider, GiDeer } from 'react-icons/gi';
 const video = {
   videoId: "Get7rqXYrbQ",
   tagline: "Are you ready to travel?",
-  title: "Tevily is a World Leading Online Tour Booking Platform",
+  title: "Combined Tours & Travels is a Online Tour Booking Platform",
   iconBoxes: [
     { id: 1, icon: GiDeer, title: "Wildlife \n Tours" },
     { id: 2, icon: GiParachute, title: "Paragliding \n Tours" },
