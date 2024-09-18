@@ -49,8 +49,35 @@
 /* styles/globals.css */
 .reey-text {
   font-family: 'Reey-Regular';
-  color: #f1683a;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ed6133, #fca311);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 2px 4px rgba(22, 22, 22, 0.398);
 }
+
+/* text infinity effect*/
+.underline-element {
+	display: inline-block;
+	padding-bottom: 5px;
+}
+.underline-element:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+  width: 100%;
+	animation: underline 3s infinite;
+}
+@keyframes underline {
+  0% { width: 0%; background-color: #ffffff;}
+  100% {width: 100%; background-color: transparent;}
+}
+
+
+
+
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1050px) {

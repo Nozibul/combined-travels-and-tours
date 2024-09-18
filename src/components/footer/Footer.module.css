@@ -1,0 +1,32 @@
+.footer {
+    background-image: url('/assets/images/backgrounds/footer3.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure content remains within the footer */
+}
+
+/* Create a transparent color overlay */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(59, 55, 55, 0.596); /* Black with 50% opacity */
+    z-index: 1;
+}
+
+/* Content on top */
+.footer-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+    color: #fff; /* Make text stand out */
+    padding: 2rem;
+}
+
+
+  
