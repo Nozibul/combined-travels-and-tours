@@ -1,0 +1,18 @@
+[
+    {
+      "icon": "FaLocationDot",
+      "title": "Find Us",
+      "details": ["666 road, broklyn street new york", "1010 Avenue, sw 54321, chandigarh"]
+    },
+    {
+      "icon": "FaPhone",
+      "title": "Call Us",
+      "details": ["+880-01406272555", "+880-01406272666"]
+    },
+    {
+      "icon": "IoIosMailOpen",
+      "title": "Mail Us",
+      "details": ["combinedtour@gmail.com", "combinedtravel@gmail.com"]
+    }
+  ]
+  

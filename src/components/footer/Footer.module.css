@@ -16,17 +16,49 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(59, 55, 55, 0.596); /* Black with 50% opacity */
+    background-color: rgba(38, 38, 38, 0.875); /* Black with 50% opacity */
     z-index: 1;
 }
 
 /* Content on top */
 .footer-content {
     position: relative;
-    z-index: 2; /* Ensures content is above the overlay */
-    color: #fff; /* Make text stand out */
+    z-index: 2; 
+    color: #fff; 
     padding: 2rem;
 }
 
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: rgb(17, 16, 41);
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .leftBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
+  .boxTitle{
+    margin-top: 5px;
+  }
+  
+  .boxNumber {
+    margin-right: 15px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  .bottomBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: rgba(255, 247, 247, 0.824);
+    margin-top: 10px;
+  }
   
