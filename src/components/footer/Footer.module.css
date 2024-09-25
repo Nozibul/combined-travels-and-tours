@@ -28,37 +28,6 @@
     padding: 2rem;
 }
 
-.container {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    background-color: rgb(17, 16, 41);
-    padding: 10px 10px 10px 20px;
-    border-radius: 10px;
-  }
   
-  .leftBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
-  .boxTitle{
-    margin-top: 5px;
-  }
-  
-  .boxNumber {
-    margin-right: 15px;
-    font-size: 30px;
-    color: white;
-  }
-  
-  
-  .bottomBox {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    color: rgba(255, 247, 247, 0.824);
-    margin-top: 10px;
-  }
   
