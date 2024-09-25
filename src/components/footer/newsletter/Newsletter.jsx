@@ -18,7 +18,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="border-[1px] border-gray-500 rounded-[10px] w-full flex flex-col px-2 py-4 min-h-[15em] transition-all duration-500 hover:bg-[#b0b7c412] hover:opacity-75 hover:border-[#2f3a4e6b]">
+    <div className="border-[1px] border-gray-500 rounded-[10px] w-full flex flex-col px-2 py-4 min-h-[15em] transition-all duration-500 hover:bg-[#222c3d2c]  hover:border-[#2f3a4e6b]">
       <div className="mb-6 underline-element">
         <TextTitle textTitle="Newsletter" />
       </div>

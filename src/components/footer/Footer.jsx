@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import FooterSectionOne from "./footerSectionOne/FooterSectionOne";
 import Newsletter from "./newsletter/Newsletter";
+import SocialFooter from "./socialFooter/SocialFooter";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className={styles["footer-content"]}>
           <FooterSectionOne />
           <div className="block my-10">
-            <hr className="w-[calc(100%-16rem)]  mx-auto border-gray-400" />
+            <hr className="w-[calc(100%-16rem)]  mx-auto border-gray-500" />
           </div>
 
           <div className="">
@@ -24,6 +25,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* Social Footer */}
+        <div>
+          <SocialFooter />
+        </div>
+        <div >
+          <h2>Hello</h2>
         </div>
       </footer>
     </>

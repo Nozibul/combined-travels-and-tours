@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     overflow: hidden; /* Ensure content remains within the footer */
 }
@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(38, 38, 38, 0.875); /* Black with 50% opacity */
+    background-color: rgba(55, 54, 54, 0.883); /* Black with 50% opacity */
     z-index: 1;
 }
 
@@ -27,6 +27,7 @@
     color: #fff; 
     padding: 2rem;
 }
+
 
   
 
