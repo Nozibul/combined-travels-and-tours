@@ -18,18 +18,18 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="border-[1px] border-gray-500 rounded-[10px] w-full flex flex-col px-2 py-4 min-h-[15em] transition-all duration-500 hover:bg-[#222c3d2c]  hover:border-[#2f3a4e6b]">
+    <div className="footer-content">
       <div className="mb-6 underline-element">
         <TextTitle textTitle="Newsletter" />
       </div>
-      <span className="mb-4 text-sm text-gray-300">
+      <span className="mb-4 text-sm text-[#a9a8b6]">
         Don’t miss to subscribe to our new feeds, kindly fill the form below.
       </span>
       <form className="flex flex-col mt-2" onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder="Your email id here"
-          className="p-4 text-gray-600 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="p-4 text-[#a9a8b6] border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)} // Update state for email

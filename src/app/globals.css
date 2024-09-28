@@ -1,10 +1,14 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.footer-content {
+  @apply border-[1px] border-gray-500 rounded-[10px] w-full flex flex-col px-2 py-4 min-h-[15em] transition-all duration-500 hover:bg-[#222c3d65] hover:border-[#2f3a4e3b];
+}
 
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 
@@ -49,8 +53,8 @@
 /* styles/globals.css */
 .reey-text {
   font-family: 'Reey-Regular';
-  font-weight: 600;
-  letter-spacing: 2px;
+  /* font-weight: 900; */
+  letter-spacing: 5px;
   background: linear-gradient(90deg, #e8604c, #fd9f07);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,39 +79,6 @@
   0% { width: 0%; background-color: #ffffff;}
   100% {width: 100%; background-color: transparent;}
 }
-
-/* 
-.liquid-wave-underline {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.liquid-wave-underline:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 75%);
-  background-size: 200% 100%;
-  animation: liquid-wave 2s infinite;
-}
-
-@keyframes liquid-wave {
-  0% {
-    background-position: -200% 0;
-  }
-  50% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-*/
 
 
 

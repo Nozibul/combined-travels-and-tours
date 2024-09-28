@@ -1,0 +1,42 @@
+/* company list */
+.companyList {
+    position: relative;
+    display: block;
+  }
+  
+  .company-List li + li {
+    margin-top: 10px;
+  }
+  
+  .companyList li a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #a9a8b6;
+    transition: all 500ms ease;
+  }
+  
+  .companyList li a:hover {
+    padding-left: 20px;
+    color: #ffffff;
+  }
+  
+  .companyList li a:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 2px;
+    content: "";
+    background-color: #e8604c;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+  
+  .companyList li a:hover:before {
+    opacity: 1;
+  }

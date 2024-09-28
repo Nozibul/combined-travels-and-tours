@@ -1,41 +1,51 @@
 import styles from "./Footer.module.css";
 import FooterSectionOne from "./footerSectionOne/FooterSectionOne";
-import Newsletter from "./newsletter/Newsletter";
+import Newsletter from "./componets/newsletter/Newsletter";
 import SocialFooter from "./socialFooter/SocialFooter";
+import footerData from "../../../local-json/footerSectionTwo.json";
+import { CompanyList } from "./componets/companyList/Company";
+
 
 const Footer = () => {
+  // Destructure with default values to handle undefined fields safely
+  const {
+    logo = "",
+    icons = [],
+    companies = [],
+    explore = [],
+    author = "Unknown Author",
+    about = "No description available",
+  } = footerData ?? {};
+
   return (
-    <>
-      <footer className={styles.footer}>
-        <div className={styles["footer-content"]}>
-          <FooterSectionOne />
-          <div className="block my-10">
-            <hr className="w-[calc(100%-16rem)]  mx-auto border-gray-500" />
+    <footer className={styles.footer}>
+      <div className={styles["footer-content"]}>
+        <FooterSectionOne />
+        <div className="block my-10">
+          <hr className="w-[calc(100%-16rem)] mx-auto border-gray-500" />
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="footer-content">Section 1</div>
+          <div className="footer-content">
+            <CompanyList title="Company" links={companies}  />
+          </div>
+          <div className="footer-content">
+            <CompanyList title="Explore" links={explore}  />
           </div>
 
-          <div className="">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-              <div className="p-4 border">Section 1</div>
-              <div className="p-4 border">Section 2</div>
-              <div className="p-4 border">Section 3</div>
-              
-              {/* Newsletter */}
-              <div>
-                <Newsletter />
-              </div>
-            </div>
+          {/* Newsletter */}
+          <div>
+            <Newsletter />
           </div>
         </div>
-        
-        {/* Social Footer */}
-        <div>
-          <SocialFooter />
-        </div>
-        <div >
-          <h2>Hello</h2>
-        </div>
-      </footer>
-    </>
+      </div>
+
+      {/* Social Footer */}
+      <div>
+        <SocialFooter />
+      </div>
+    </footer>
   );
 };
 
