@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(20, 19, 19, 0.842); /* Black with 50% opacity */
+    background-color: rgba(44, 43, 43, 0.579); 
     z-index: 1;
 }
 
@@ -30,5 +30,11 @@
 
 
   
-
+.borderGradientApproach {
+  --gradient: linear-gradient(90deg, #3f1eff, #f459ff, #fc6a93, #fff2a2);
+  border-width: 3px;
+  border-style: solid;
+  border-image: var(--gradient) 1;
+ 
+}
   

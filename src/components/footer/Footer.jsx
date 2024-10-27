@@ -4,7 +4,7 @@ import Newsletter from "./componets/newsletter/Newsletter";
 import SocialFooter from "./socialFooter/SocialFooter";
 import footerData from "../../../local-json/footerSectionTwo.json";
 import { CompanyList } from "./componets/companyList/Company";
-
+import Image from "next/image";
 
 const Footer = () => {
   // Destructure with default values to handle undefined fields safely
@@ -28,10 +28,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="footer-content">Section 1</div>
           <div className="footer-content">
-            <CompanyList title="Company" links={companies}  />
+            <CompanyList title="Company" links={companies} />
           </div>
           <div className="footer-content">
-            <CompanyList title="Explore" links={explore}  />
+            <CompanyList title="Explore" links={explore} />
           </div>
 
           {/* Newsletter */}
@@ -40,7 +40,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Social Footer */}
       <div>
         <SocialFooter />

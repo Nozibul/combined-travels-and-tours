@@ -1,4 +1,6 @@
+import Image from "next/image";
 import styles from "./ReviewSection.module.css"; // Import the CSS module
+import imgs from "../../../../public/assets/images/gallery/1.jpg"
 
 const ReviewSection = () => {
   return (
@@ -11,9 +13,12 @@ const ReviewSection = () => {
           >
             <div className={styles.testimonial}>
               <div className={styles.pic}>
-                <img
-                  src="http://www.markharwood.plus.com/images/people%20large/people8.jpg"
+                <Image
+                  priority
+                  src={imgs}
                   alt="Diana"
+                  // width={500}
+                  // height={500}
                   className="img-responsive"
                 />
               </div>

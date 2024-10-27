@@ -4,7 +4,7 @@ import Blog from "./blog/Blog";
 import CardSection from "./cardSection/CardSection";
 import Discount from "./discount/Discount";
 import Gallery from "./gallery/Gallery";
-// import Guide from "./guide/Guide";
+import Guide from "./guide/Guide";
 import HomeGallery from "./homeGallery/HomeGallery";
 import IconCards from "./iconCards/IconCards";
 import ParallaxSection from "./parallaxSection/ParallaxSection";
@@ -27,9 +27,7 @@ const HomePage = () => {
       <ParallaxSection />
       <ReviewSection />
       <Feedback />
-     
-      {/* <Guide /> */}
-      <h1 className="text-3xl font-bold mt-14 ">Home Page</h1>
+      <Guide />
     </>
   );
 };
