@@ -13,6 +13,7 @@
     "delay": "^6.0.0",
     "framer-motion": "^11.2.10",
     "lightgallery": "^2.7.2",
+    "lucide-react": "^0.454.0",
     "next": "14.2.13",
     "nextjs-toploader": "^1.6.12",
     "prop-types": "^15.8.1",
